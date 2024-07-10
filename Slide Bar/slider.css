@@ -21,10 +21,14 @@ body{
     width: 50px;
     cursor: pointer;
 }
-.slider{
+.frame{
     width: 800px;
     height: 400px;
     overflow: hidden;
+}
+.slider{
+    display: flex;
+    transition: all 1s ease;
 }
 .image{
     width: 100%;
