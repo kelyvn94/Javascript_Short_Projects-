@@ -46,3 +46,34 @@ body{
     border-radius: 50%;
     border: 1px solid white;
 }
+
+#arrow{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#frame{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+#slider{
+    display: flex;
+    transition: all 1s ease;
+}
+#image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#container-bottom{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
