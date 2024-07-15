@@ -46,12 +46,34 @@ left.addEventListener("click", ()=> {
 //Correction
 
 
-const getFirstSlide = () => {
+const getirstSlide = () => {
     slider.style.transform = `translateX(0px)`;
     sliderNumber = 1;
 }
 
-const getLastSlide = () => {
+const getastSlide = () => {
+    slider.style.transform = `translateX(${(length - 1) * 800}px)`;
+    sliderNumber = 1;
+}
+
+right.addEventListener("click", ()=> {
+
+    (sliderNumber < length) ? nextSlide() : previousSlide();
+    
+});
+    
+left.addEventListener("click", ()=> {
+
+    (sliderNumber > 1) ? previousSlide() : nextSlide();
+
+});
+
+const getistSlide = () => {
+    slider.style.transform = `translateX(0px)`;
+    sliderNumber = 1;
+}
+
+const getstSlide = () => {
     slider.style.transform = `translateX(${(length - 1) * 800}px)`;
     sliderNumber = 1;
 }
